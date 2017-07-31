@@ -11,7 +11,7 @@ module.exports = {
     // 是否自动打开浏览器
     open: true,
     // 打开浏览器后 自动打开的 目标页面
-    openTarget: 'dist/help.html',
+    openTarget: 'dist/redux.html',
     // 文件修改后是否自动刷新浏览器
     liveload: true
   },
