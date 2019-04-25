@@ -11,16 +11,29 @@
   "scripts": {
     "start": "DEV=1 LIVELOAD=1 ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --host 0.0.0.0 --port 9000",
     "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
-    "lint": "./node_modules/eslint/bin/eslint.js --fix ./ --ext .jsx --ext .js"
+    "lint": "eslint --ext .js --ext .jsx src/"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "readmeFilename": "README.md",
   "tnpm": {
     "mode": "npminstall"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "babel-polyfill": "^6.8.0",
+    "classnames": "^2.2.5",
     "es6-promise": "^4.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
     "extend": "^3.0.0",
+    "moment": "^2.18.1",
+    "pre-commit": "^1.2.2",
     "react": "^15.3.0",
     "react-addons-transition-group": "^15.3.0",
     "react-dom": "^15.3.0",
@@ -29,9 +42,7 @@
     "react-router-redux": "^4.0.4",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
-    "reqwest": "~2.0.5",
-    "classnames": "^2.2.5",
-	"moment": "^2.18.1"
+    "reqwest": "~2.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
