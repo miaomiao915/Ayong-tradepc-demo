@@ -1,4 +1,4 @@
-import Tools from 'utils/index';
+// import Tools from 'utils/index';
 import React from 'react';
 import { Button } from 'qnui';
 import './index.scss';
@@ -25,13 +25,8 @@ class Demo extends React.Component {
                 <Button
                     type="primary"
                     className="redux-demo"
-                    onClick={() => {
-                        actions.clickDemo(() => {
-
-                        }, () => {});
-                    }}
-                >
-点我看看
+                    onClick={() => actions.clickDemo()}>
+                    点我看看 这里是redux页面
                 </Button>
             </div>
         );

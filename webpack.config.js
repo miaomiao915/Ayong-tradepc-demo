@@ -53,7 +53,7 @@ var config = {
       {
         test: /\.scss/,
         include: [
-          path.resolve(__dirname,'src'),
+          path.resolve(__dirname, 'src'),
           qnuiReg
         ],
         loader: ExtractTextPlugin.extract('style', 'raw!postcss!sass-loader')
@@ -78,8 +78,8 @@ var config = {
       allChunks: true
     }),
     new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-        minChunks: Infinity
+      name: 'vendor',
+      minChunks: Infinity
     }),
     // 允许错误不打断程序
     new webpack.NoErrorsPlugin(),

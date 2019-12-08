@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import App from 'components/app/index';
 import createStoreWithMdware from './store/index';
 import reducers from './reducers/index';
-
 import Demo from './containers/demo/index';
 
 

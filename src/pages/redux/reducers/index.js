@@ -1,5 +1,3 @@
-
-
 import { combineReducers } from 'redux';
 import Demo from '../containers/demo/reducer';
 

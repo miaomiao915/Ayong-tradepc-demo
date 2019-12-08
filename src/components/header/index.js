@@ -19,16 +19,18 @@ class Header extends React.Component {
                 routerDemo: '/dist/router.html#/demo',
                 routerDemo1: '/dist/router.html#/demo1',
                 routerDemo2: '/dist/router.html#/demo2',
-
                 h5: '/dist/h5/ebsindex.html',
+                miaomiaoCal:'/dist/miaomiaoRedux.html#/calculate',
+                miaomiaoInc:'/dist/miaomiaoRedux.html#/incomeAn',
             },
             onLine: {// 自行根据服务端路径定义
                 redux: '/dist/redux.html',
                 routerDemo: '/dist/router.html#/demo',
                 routerDemo1: '/dist/router.html#/demo1',
                 routerDemo2: '/dist/router.html#/demo2',
-
                 h5: '/dist/h5/ebsindex.html',
+                miaomiaoCal:'/dist/miaomiaoRedux.html#/calculate',
+                miaomiaoInc:'/dist/miaomiaoRedux.html#/incomeAn',
             },
         };
 
@@ -58,6 +60,7 @@ class Header extends React.Component {
                         <Menu.Item key="3" link={links.routerDemo2}>
                             <a href={links.routerDemo2}>About2</a>
                         </Menu.Item>
+                       
                     </Menu>
                 </Item>
                 <Item
@@ -72,6 +75,21 @@ class Header extends React.Component {
                     icon="training"
                     link={links.h5}
                 />
+                <Item
+                    itemid="4"
+                    text="MiaomiaoRedux"
+                    icon="training"
+                    
+                >
+                    <Menu>
+                        <Menu.Item key="1" link={links.miaomiaoCal}>
+                            <a href={links.miaomiaoCal}>计算器</a>
+                        </Menu.Item>
+                        <Menu.Item key="2" link={links.miaomiaoInc}>
+                            <a href={links.miaomiaoInc}>收入分析</a>
+                        </Menu.Item>
+                    </Menu>
+                </Item>
                 <li className="navigation-toolbar">
                     <ul>
                         <li>

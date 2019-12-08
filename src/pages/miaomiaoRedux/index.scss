@@ -1,0 +1,96 @@
+@import '../../styles/common';
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$width : 1500px;
+$blue :rgb(60, 162, 239);
+$border:#dbdbdb;
+$green:#3FAF27;
+
+.banner {
+	width: 1536px;
+	height: 34px;
+	background-color: rgb(233, 255, 228);
+	color: $green;
+	margin-top: 50px;
+	font-size: 14px;
+	padding-left: 64px;
+	line-height: 34px;
+	margin-left: 50px;
+	position: relative;
+
+	img {
+		width: 14px;
+		height: 14px;
+		position: relative;
+		top: 2px;
+		margin-right: 3px;
+	}
+
+	span {
+		position: absolute;
+		right: 100px;
+	}
+
+	.exit {
+		color: $blue;
+		right: 10px;
+	}
+
+	span:hover {
+		cursor: pointer;
+	}
+}
+
+.center {
+	width: 1600px;
+	padding: 15px 50px;
+
+	ul {
+		display: flex;
+		width: 140px;
+		height: 20px;
+		font-size: 14px;
+
+		li {
+			width: 70px;
+			text-align: center;
+			list-style: none;
+			position: relative;
+			top: 1px;
+
+			a {
+				color: #0e0e0eb5;
+				text-decoration: none;
+			}
+		}
+
+		li:hover {
+			cursor: pointer;
+		}
+
+		.cal {
+			a {
+				color: $blue;
+			}
+
+			border: 1px solid $border;
+			border-bottom-color: white;
+		}
+	}
+
+	.box {
+		width: 1600px;
+		height: 500px;
+
+
+
+
+	}
+
+
+}
